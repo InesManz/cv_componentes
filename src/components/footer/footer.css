@@ -1,0 +1,128 @@
+.footer {
+  margin-top: 8rem;
+  background-color: var(--secondary-color); /* Fondo coherente con cards */
+  color: var(--text-color);
+  padding: 2rem;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+  gap: 2rem;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-column h3 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--text-color);
+}
+
+.footer-column p,
+.footer-column a {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--text-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-column a:hover {
+  color: var(--accent-color);
+}
+
+.footer-social {
+  display: flex;
+  gap: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+.footer-social a {
+  color: var(--text-color);
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: var(--accent-color);
+}
+
+.footer-bottom {
+  border-top: 1px solid var(--border-color);
+  padding-top: 1rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--text-color);
+}
+
+
+
+/* 768px y */
+@media (max-width: 768px) {
+  .footer {
+    margin-top: 5rem;
+    padding: 1.5rem;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+  }
+
+  .footer-column {
+    min-width: auto;
+  }
+
+  .footer-column h3 {
+    font-size: 0.9rem;
+  }
+
+  .footer-social {
+    justify-content: center;
+  }
+}
+
+/* 480px */
+@media (max-width: 480px) {
+  .footer {
+    margin-top: 3rem;
+    padding: 1rem;
+    font-size: 0.8rem;
+  }
+
+  .footer-container {
+    gap: 1rem;
+  }
+
+  .footer-column h3 {
+    font-size: 0.8rem;
+  }
+
+  .footer-column p,
+  .footer-column a {
+    font-size: 0.75rem;
+  }
+
+  .footer-social {
+    gap: 0.5rem;
+  }
+
+  .footer-social a {
+    font-size: 1rem;
+  }
+
+  .footer-bottom {
+    font-size: 0.75rem;
+  }
+}
